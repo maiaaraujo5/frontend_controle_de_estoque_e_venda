@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background: #F9F7F7;
+    background: #DEBCB9;
     padding 30px 0;
-    
+    border-bottom: 2px outset #EDE0D3;
+        
     header {
         width: 300px;
         margin: 0 auto;
@@ -13,7 +14,7 @@ export const Container = styled.div`
         justify-content: space-between;
         
         h1 {
-            color: #000
+            color: #000000
         }
     }
 `;

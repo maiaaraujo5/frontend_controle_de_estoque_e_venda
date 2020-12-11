@@ -4,6 +4,7 @@ export const Container = styled.div`
   background: #f0f0f5;
   border-radius: 20px;
   margin-top: 20px;
+  
   & + div {
     margin-left: 20px;
   }
@@ -15,6 +16,8 @@ export const Container = styled.div`
     overflow: hidden;
     transition: 0.3s opacity;
     text-align: center;
+    
+    border-bottom: outset;
     
     img {
       width: 300px;
