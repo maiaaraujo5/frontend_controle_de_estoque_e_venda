@@ -5,15 +5,15 @@ export const Container = styled.div`
     padding 30px 0;
     
     header {
-        width: 80px;
+        width: 300px;
         margin: 0 auto;
-        padding: 0 0 160px;
+        padding: 0 0 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         
-        img {
-            border-radius:50%
+        h1 {
+            color: #000
         }
     }
 `;
