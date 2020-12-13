@@ -7,9 +7,27 @@ import {ProductsContainer} from "./styles";
 
 const Dashboard: React.FC = () => {
 
+    const menuOptions = [
+        {
+            name: "Colares",
+            url: "colares"
+        },
+        {
+            name: "Brincos",
+            url: "brincos"
+        },
+        {
+            name: "Aneis",
+            url: "aneis"
+        },
+        {
+            name: "Pulseiras",
+            url: "pulseira"
+        }
+    ];
     return (
         <>
-            <Header/>
+            <Header menuOptions={menuOptions}/>
             <ProductsContainer>
                 <Product/>
                 <Product/>

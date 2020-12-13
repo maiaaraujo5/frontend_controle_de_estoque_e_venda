@@ -1,34 +1,26 @@
 import React, {useState} from 'react'
 
 import {Container} from './styles'
+import iconCart from '../../assets/icon-cart.svg'
 
 const Product: React.FC = () => {
     return (
         <Container>
             <header>
-                <img src="https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:fafafa,c_scale,dpr_3.0,f_auto,w_500/5032921_png/attract-round-ring--white--rhodium-plated-swarovski-5032921.png" alt='product name'/>
+                <img
+                    src="https://firebasestorage.googleapis.com/v0/b/kyte-7c484.appspot.com/o/ZCbY4s4BpUcMPjdybQXVrsg5G1g2%2FF7D41465-2EDE-4BD3-88F3-6777BA77EF5A.jpg?alt=media"
+                    alt='product name'/>
+                <img className="icon-cart"
+                     src={iconCart}
+                     alt="icon-cart"
+                />
             </header>
             <section className="body">
-                <h2>Anel</h2>
+                <h1>Anel</h1>
+                <p className="category"> Anel </p>
+                <p className="price"> R$ 200,00</p>
                 <p>Anel muito bonito</p>
-                <p className="price"> R$ <b>200,00</b></p>
             </section>
-            <section className="footer">
-
-                <div className="availability-container">
-
-                    <label htmlFor={`available-switch-123}`} className="switch">
-                        <input
-                            id={`available-switch-123}`}
-                            type="checkbox"
-                            checked={true}
-                            data-testid={`change-status-food-123`}
-                        />
-                        <span className="slider" />
-                    </label>
-                </div>
-            </section>
-
         </Container>
     );
 };

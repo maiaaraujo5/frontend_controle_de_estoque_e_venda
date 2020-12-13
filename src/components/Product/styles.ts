@@ -1,44 +1,68 @@
 import styled, {css} from "styled-components";
 
 export const Container = styled.div`
-  background: #f0f0f5;
   border-radius: 20px;
   margin-top: 20px;
+  width: 320px;
+  max-width: 320px;
   
   & + div {
     margin-left: 20px;
   }
   
+  transition: box-shadow 0.4s ease-in-out;
+  
+  &:hover{
+    box-shadow: 20px 0px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 20px rgba(0, 0, 0, 0.30);  
+    cursor: pointer;
+    display: true;
+  }
+  
   header {
-    background: #ffff;
     border-radius: 8px 8px 0px 0px;
-    height: 200px;
+    height: 320px;
     overflow: hidden;
     transition: 0.3s opacity;
-    text-align: center;
-    
-    border-bottom: outset;
     
     img {
-      width: 300px;
-      pointer-events: none;
-      user-select: none;
+      width: 320px;
+      border-radius: 7px;
     }
+    
+     .icon-cart {
+        display: none;
+        width: 53px;
+       -webkit-transform: scaleX(-1);
+       transform: scaleX(-1);
+       position: absolute;
+       margin-top: 248px;
+       margin-left:-60px;
+       background: #fff;
+       border-radius: 50px;
+       }
   }
   section.body {
-    padding: 27px;
-    h2 {
+    margin-top: -42px;
+    padding: 10px;
+    overflow: hidden;
+    h1 {
       color: #3d3d4d;
     }
     p {
       color: #3d3d4d;
-      margin-top: 16px;
+      margin-top: 10px;
+    }
+    
+    .category{
+       font-size: 13px;
+       color: #a9b1be;
+       font-weight: 400;
     }
     .price {
       font-style: normal;
-      font-size: 24px;
+      font-size: 21px;
       line-height: 34px;
-      color: #39b100;
+      color: #000;
       b {
         font-weight: 600;
       }

@@ -1,20 +1,47 @@
 import styled from 'styled-components'
-
+import {shade} from 'polished';
 export const Container = styled.div`
-    background: #DEBCB9;
-    padding 30px 0;
-    border-bottom: 2px outset #EDE0D3;
-        
+    background: #FFFF;
+    padding 20px 0;
+    
     header {
         width: 300px;
         margin: 0 auto;
-        padding: 0 0 10px;
+        padding: 0 0 35px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         
-        h1 {
-            color: #000000
+        img {
+           width: 305px;
         }
+    }
+    
+    menu {
+        background: #F3F3F5;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        height: 80px;
+        border-radius: 7px 7px 7px 7px;
+        
+        a {
+             text-decoration: none;
+             color: #000;
+             display: inline-flex;
+             font-size: 25px;
+             font-weight: 400;
+             transition: color 0.4s;
+             &:hover {
+                color: ${shade(0.5, '#fff')}
+             }
+        }
+        
+        a + a {
+            margin-left: 20px;
+        }
+        
     }
 `;
