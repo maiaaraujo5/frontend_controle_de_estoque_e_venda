@@ -6,10 +6,6 @@ export const Container = styled.div`
   width: 320px;
   max-width: 320px;
   
-  & + div {
-    margin-left: 20px;
-  }
-  
   transition: box-shadow 0.4s ease-in-out;
   
   &:hover{
