@@ -4,6 +4,9 @@ import {AnimationContainer, Background, Container, Content} from "./styles";
 import logo from "../../assets/Logo-Lua.png"
 import {Form} from "@unform/web";
 import {FormHandles} from "@unform/core";
+import Input from "../../components/Input";
+import {FiLock, FiMail} from "react-icons/all";
+import Button from "../../components/Button";
 
 interface LoginFormData {
     email: string
@@ -19,12 +22,14 @@ const Login: React.FC = () => {
 
     return (
         <Container>
-            <Background/>
-            <Content>
+            <Background className="split left"/>
+            <Content className="split right">
                 <AnimationContainer>
                     <img src={logo} alt="logo"/>
                     <Form ref={formRef} onSubmit={handleSubmit}>
-
+                        <Input name="email" icon={FiMail} placeholder="E-mail"/>
+                        <Input name="password" icon={FiLock} type="password" placeholder="Senha"/>
+                        <Button type="submit">Entrar</Button>
                     </Form>
                 </AnimationContainer>
             </Content>
