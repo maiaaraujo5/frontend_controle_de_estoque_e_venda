@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
                 <SideBar/>
             </Aside>
             <Content>
-                <h1>Olá</h1>
+                <h1>Dashboard</h1>
             </Content>
         </Container>
 

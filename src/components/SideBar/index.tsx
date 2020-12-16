@@ -1,7 +1,7 @@
 import React from 'react'
 import {Content} from "./styles";
 import {Link} from "react-router-dom";
-import {AiOutlineDashboard} from "react-icons/all";
+import {AiOutlineDashboard, AiOutlineShop, BiMoney} from "react-icons/all";
 
 const SideBar: React.FC = () => {
     return (
@@ -15,9 +15,9 @@ const SideBar: React.FC = () => {
             </header>
             <menu>
                 <section className="options">
-                    <Link to="/dashboard">Dashboard</Link>
-                    <Link to="/my-sells">Vendas</Link>
-                    <Link to="/products">Produtos</Link>
+                    <Link to="/dashboard"><AiOutlineDashboard/> Dashboard</Link>
+                    <Link to="/my-sells"><BiMoney/> Vendas</Link>
+                    <Link to="/products"><AiOutlineShop/>  Produtos</Link>
                 </section>
             </menu>
         </Content>

@@ -7,7 +7,6 @@ export const Content = styled.div`
     background-color: #EDE0D3;
     display: block;
     header {
-        padding-top: 40px;
         display: block;
         align-items: center;
         text-align: center;
@@ -16,7 +15,7 @@ export const Content = styled.div`
         border-radius: 10px;
         
         img {
-            margin-top: 30px;
+            margin-top: 20px;
             border-radius: 50%; 
             width: 160px;    
             overflow: hidden;   
@@ -36,22 +35,21 @@ export const Content = styled.div`
         margin-top: 30px;
         section.options {
            a {
-               padding-left: 90px;
+               padding-left: 75px;
                text-decoration: none;
                display: block;
                color: black;
                font-size: 20px;
                svg {
                    color: black;
-                   
+                   height: 20px;
                }
             
             &:hover {
-                background: rgba(0,0,0,0.1)
+                background: rgba(0,0,0,0.1);
             } 
             
            }
-           
            > a {
                margin-top: 20px;
            }

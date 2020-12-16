@@ -9,12 +9,12 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: relative;
-    background-color: red;
     width: 100%;
     height: 100vh;
     
     h1 {
         text-align: center;
+        color: black;
     }
 `;
 
