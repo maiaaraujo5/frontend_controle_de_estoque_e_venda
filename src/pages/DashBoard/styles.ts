@@ -1,13 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-`;
-
-export const Content = styled.div`
-    background-color: red;
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
     width: 100%;
 `;
 
-export const Header = styled.div`
-    display: block;
+export const Content = styled.div`
+    display: relative;
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    
+    h1 {
+        text-align: center;
+    }
+`;
+
+export const Aside = styled.div`
+        display: flex;
+        position: fixed;
+        height: 100%;
+        width: 100%;
 `;

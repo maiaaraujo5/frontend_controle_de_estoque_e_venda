@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Content = styled.div`
     height: 100%;
-    width: 12%;
-    max-width: 12%;
+    width: 11%;
+    max-width: 11%;
     background-color: #EDE0D3;
     display: block;
     header {
@@ -12,24 +12,31 @@ export const Content = styled.div`
         align-items: center;
         text-align: center;
         justify-content: center;
-        color: #000;
-        font-size: 16px;
-        font-weight: 600;
-       
+        background:rgba(0,0,0,0.1);
+        border-radius: 10px;
+        
         img {
-            padding-bottom: 10px;
+            margin-top: 30px;
             border-radius: 50%; 
-            height: 240px;       
+            width: 160px;    
+            overflow: hidden;   
+            border: 4px solid #DEBCB9;
+            box-shadow: 0 0 0 4px #DEBCB9;
+        }
+        
+        h2 {
+            margin-top: 10px;
+            font-weight: 600;
+            color: #000;
         }
         
     }
     
     menu {
         margin-top: 30px;
-        align-items: center;
-        text-align: center;
         section.options {
            a {
+               padding-left: 90px;
                text-decoration: none;
                display: block;
                color: black;
@@ -38,6 +45,11 @@ export const Content = styled.div`
                    color: black;
                    
                }
+            
+            &:hover {
+                background: rgba(0,0,0,0.1)
+            } 
+            
            }
            
            > a {

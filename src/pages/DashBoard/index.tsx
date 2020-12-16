@@ -1,20 +1,18 @@
 import React from 'react'
 import SideBar from "../../components/SideBar";
-import {Container, Content, Header} from "./styles";
+import {Container, Content, Aside} from "./styles";
 import NavBar from "../../components/NavBar";
 
 
 const Dashboard: React.FC = () => {
     return (
         <Container>
-            <Header>
-                <NavBar/>
+            <Aside>
                 <SideBar/>
-            </Header>
+            </Aside>
             <Content>
                 <h1>Olá</h1>
             </Content>
-
         </Container>
 
     )
