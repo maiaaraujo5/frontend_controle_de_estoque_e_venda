@@ -1,7 +1,8 @@
 import React from 'react'
 import SideBar from "../../components/SideBar";
-import {Container, Content, Aside} from "./styles";
+import {Container, Content, Aside, Cards} from "./styles";
 import NavBar from "../../components/NavBar";
+import Card from "../../components/Card";
 
 
 const Dashboard: React.FC = () => {
@@ -10,11 +11,15 @@ const Dashboard: React.FC = () => {
             <Aside>
                 <SideBar/>
             </Aside>
-
             <Content>
-                <h1>Dashboard</h1>
+                <Cards>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </Cards>
             </Content>
-        </Container>
+            </Container>
 
     )
 };

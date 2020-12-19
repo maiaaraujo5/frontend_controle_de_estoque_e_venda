@@ -32,7 +32,7 @@ export const Header = styled.div`
 `;
 
 export const PictureProfile = styled.div`
-          img {
+        img {
             margin-top: 20px;
             border-radius: 50%; 
             width: 160px;    
