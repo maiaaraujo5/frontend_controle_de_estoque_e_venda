@@ -1,13 +1,13 @@
 import React from "react";
 import {Container} from "./styles";
-import Input from "../Input";
-import {BsSearch, FiMail} from "react-icons/all";
+import lua from '../../assets/Logo-Lua.png'
 
 const NavBar: React.FC = () => {
     return (
         <Container>
             <header>
-                <h1>A Lua é de Prata</h1>
+               <img src={lua}
+                    alt="A Lua é de Prata"/>
             </header>
         </Container>
     );
