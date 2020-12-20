@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     height: 100vh;
+    width: 100%;
 `;
 
 export const Content = styled.div`
-    display: block;
+    display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 `;
 
 export const Aside = styled.div`
@@ -17,10 +18,10 @@ export const Aside = styled.div`
 `;
 
 export const Cards = styled.div`
-     color: black;
-     margin-top: 70px;
      display: grid;
      grid-template-columns: repeat(4, 1fr);
-     grid-gap: 10px;
-    
+     grid-gap: 0px;
+     width: 100%;
+     margin-top: 157px;
+     margin-left: 70px;
 `;
