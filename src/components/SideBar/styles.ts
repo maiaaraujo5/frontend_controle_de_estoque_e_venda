@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-    height: 100%;
+    height: 100vh;
     width: 280px;
     background-color: #F3F3F5;
     display: block;

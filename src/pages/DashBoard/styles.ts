@@ -8,20 +8,36 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    margin-left: 70px;
 `;
 
 export const Aside = styled.div`
         display: block;
-        height: 100%;
+        height: 100vh;
 `;
 
 export const Cards = styled.div`
+     flex: 1;
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      grid-gap: 0px;
      width: 100%;
      margin-top: 157px;
-     margin-left: 70px;
+`;
+
+export const Charts = styled.div `
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 0px;
+    color: black;
+    
+`;
+
+export const LineChart = styled.div`
+    // height: 300px;
+    // width: 300px;
 `;
