@@ -1,9 +1,9 @@
 import React from "react";
 
 import Header from "../../components/Header";
-import Product from "../../components/Product";
 
 import {AnimationContainer, ProductsContainer} from "./styles";
+import Product from "../../components/Product";
 
 const PublicProducts: React.FC = () => {
 
@@ -28,7 +28,10 @@ const PublicProducts: React.FC = () => {
     return (
         <>
             <Header menuOptions={menuOptions}/>
-                <ProductsContainer>
+            <ProductsContainer>
+                <AnimationContainer>
+                    <Product/>
+                </AnimationContainer>
                     <Product/>
                     <Product/>
                     <Product/>
@@ -38,13 +41,7 @@ const PublicProducts: React.FC = () => {
                     <Product/>
                     <Product/>
                     <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                </ProductsContainer>
+            </ProductsContainer>
         </>
     )
 };

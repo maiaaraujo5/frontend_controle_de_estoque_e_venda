@@ -10,7 +10,7 @@ const fadeIn = keyframes `
 `;
 
 export const ProductsContainer = styled.div`
-    width: 80%
+    width: 100%
     max-width: 1280px;
     padding: 40px 0;
     margin-left: 10%;
@@ -19,7 +19,7 @@ export const ProductsContainer = styled.div`
     animation: ${fadeIn} 1.5s;
 
     grid-template-columns: repeat(5, 1fr);
-    grip-gap: 0px;
+    grip-gap: 10px;
     
     @media only screen and (max-width: 600px) {
       grid-template-columns: repeat(1, 1fr);
@@ -47,6 +47,4 @@ export const AnimationContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
- 
 `;
