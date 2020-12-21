@@ -2,19 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
        display: flex;
-       width: 400px;
+       width: calc(100% - 1em);
        height: 150px;
        background-color: #F3F3F5;
        border-radius: 4px;
        color: black;
        box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 0 0 1px rgba(63,63,68,.1);
-       
 `;
 
 export const Image = styled.div`
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      margin-left: calc(2em);
       
       svg {
            font-size: 60px;
@@ -22,7 +21,7 @@ export const Image = styled.div`
 `;
 
 export const Content = styled.div`
-    width: 100%;
+    width: calc(100% - 1em);
     display: block;
     text-align: right;
     
