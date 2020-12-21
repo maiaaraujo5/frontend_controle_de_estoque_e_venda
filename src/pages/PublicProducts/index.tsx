@@ -30,17 +30,21 @@ const PublicProducts: React.FC = () => {
             <Header menuOptions={menuOptions}/>
             <ProductsContainer>
                 <AnimationContainer>
-                    <Product/>
+                    <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                             oldAmount={315.99}/>
                 </AnimationContainer>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99} badge="liquidação"/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99}/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99} badge="MAIS VENDIDO"/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99}/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99}/>
+                <Product title="Bolsa de Mulher" category="Bolsas" description="Bolsa muito bonita" amount={123.60}
+                         oldAmount={315.99}/>
             </ProductsContainer>
         </>
     )

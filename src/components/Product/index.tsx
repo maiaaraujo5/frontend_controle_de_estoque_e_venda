@@ -3,19 +3,28 @@ import {Container, Badge, Image, Details, Category, Title, Description, Bottom, 
 import {Link} from "react-router-dom";
 import {AiOutlineHeart, FaCartPlus} from "react-icons/all";
 
-const Product: React.FC = () => {
+interface Props {
+    title: string
+    description: string
+    category: string
+    oldAmount?: number
+    amount: number
+    badge?: string
+}
+
+const Product: React.FC<Props> = ({title, description,category, oldAmount, amount, badge}) => {
     return (
         <Container>
-            <Badge>Liquidação</Badge>
+            {badge && <Badge>{badge}</Badge>}
             <Image>
                 <img src="https://i.imgur.com/xdbHo4E.png" alt=""/>
             </Image>
             <Details>
-                <Category>Bolsas</Category>
-                <Title>Bolsa de Mulher</Title>
-                <Description>Este é um produto muito bonito, todos deveriam compra</Description>
+                <Category>{category}</Category>
+                <Title>{title}</Title>
+                <Description>{description}</Description>
                 <Bottom>
-                    <Price><small>R$120,99</small>R$80,99</Price>
+                    <Price>{oldAmount && <small>R${amount}</small>}R${amount}</Price>
                     <Links>
                         <Link to=""><AiOutlineHeart/></Link>
                         <Link to=""><FaCartPlus/></Link>
