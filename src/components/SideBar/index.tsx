@@ -25,10 +25,10 @@ const SideBar: React.FC = () => {
                     <AiOutlineDashboard/>
                     <Link to="/dashboard">Dashboard</Link>
                 </Option>
-                <Option>
-                    <CgProfile/>
-                    <Link to="/sells">Meu Perfil</Link>
-                </Option>
+                {/*<Option>*/}
+                {/*    <CgProfile/>*/}
+                {/*    <Link to="/sells">Meu Perfil</Link>*/}
+                {/*</Option>*/}
                 <Option>
                     <AiOutlineShop/>
                     <Link to="/products">Produtos</Link>

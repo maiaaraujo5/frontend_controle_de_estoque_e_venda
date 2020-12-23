@@ -1,9 +1,10 @@
 import React from 'react'
-import SideBar from "../../components/SideBar";
-import {Container, Content, Aside, Cards, Charts} from "./styles";
-import Card from "../../components/Card";
+import SideBar from "../../../components/SideBar";
+import {Container, Content, Cards, Charts} from "./styles";
+import Card from "../../../components/Card";
 import {FcBusinesswoman, FcMoneyTransfer, FcPositiveDynamic, FcShipped} from "react-icons/all";
-import Chart from "../../components/AreaChart";
+import Chart from "../../../components/AreaChart";
+import {Aside} from "../global";
 
 
 const Dashboard: React.FC = () => {

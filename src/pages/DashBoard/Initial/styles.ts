@@ -14,18 +14,13 @@ export const Content = styled.div`
     margin-left: 20px;
 `;
 
-export const Aside = styled.div`
-        display: fixed;
-        height: calc(100% - 10px);
-`;
-
 export const Cards = styled.div`
      display: grid;
      flex-direction: column;
      grid-template-columns: repeat(4, 1fr);
      grid-gap: 15px;
      width: 100%;
-     margin-top: 157px;
+      margin-top: 157px;
      
     @media only screen and (max-width: 1660px) {
       grid-template-columns: repeat(2, 1fr);
@@ -43,7 +38,7 @@ export const Charts = styled.div`
     grid-gap: 10px;
     color: black;
     
-    // @media only screen and (max-width: 2340px) {
-    //   grid-template-columns: repeat(1, 1fr);
-    // }  
+    @media only screen and (max-width: 1050px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 `;

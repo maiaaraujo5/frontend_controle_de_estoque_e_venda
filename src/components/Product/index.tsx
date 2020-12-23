@@ -24,7 +24,7 @@ const Product: React.FC<Props> = ({title, description,category, oldAmount, amoun
                 <Title>{title}</Title>
                 <Description>{description}</Description>
                 <Bottom>
-                    <Price>{oldAmount && <small>R${amount}</small>}R${amount}</Price>
+                    <Price>{oldAmount && <small>R${oldAmount}</small>}R${amount}</Price>
                     <Links>
                         <Link to=""><AiOutlineHeart/></Link>
                         <Link to=""><FaCartPlus/></Link>
