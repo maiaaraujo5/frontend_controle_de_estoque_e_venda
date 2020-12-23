@@ -20,7 +20,7 @@ const Products: React.FC = () => {
 
     useEffect(() => {
         async function fetchProducts(): Promise<void> {
-          const products =   [
+            const products = [
                 {
                     name: "Bolsa",
                     description: "Muito Linda",
@@ -47,6 +47,7 @@ const Products: React.FC = () => {
             setFetchProducts(products);
             setProducts(products)
         }
+
         fetchProducts()
     }, []);
 
@@ -76,7 +77,7 @@ const Products: React.FC = () => {
                                  amount={data.amount}
                                  oldAmount={data.oldAmount}
                                  badge={data.badge}
-                                     />
+                        />
                     ))}
                 </ProductContainer>
             </Content>
