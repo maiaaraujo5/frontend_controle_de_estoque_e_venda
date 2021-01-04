@@ -1,31 +1,42 @@
 import React from "react";
 import {Container} from "./styles";
+import {Link} from "react-router-dom";
 
-const Table: React.FC = () => {
+interface IProps {
+    lines: Line[]
+}
+
+interface Line {
+    purchaseNumber: string,
+    price: string,
+    date: string,
+    seeMore: string,
+}
+
+
+const Table: React.FC<IProps> = ({lines}: IProps) => {
     return (
         <Container>
             <table className="fl-table">
                 <thead>
-                    <tr>
-                        <th>Número da Compra</th>
-                        <th>Valor</th>
-                        <th>Data</th>
-                        <th>Ver Mais</th>
-                    </tr>
+                <tr>
+                    <th>Número da Compra</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Ver Mais</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>000001</td>
-                        <td>R$ 50,00</td>
-                        <td>21/12/2020</td>
-                        <td>Ver mais</td>
-                    </tr>
-                    <tr>
-                        <td>000002</td>
-                        <td>R$ 50,00</td>
-                        <td>21/12/2020</td>
-                        <td>Ver mais</td>
-                    </tr>
+                {
+                    lines.map((line: Line) => (
+                        <tr key={line.purchaseNumber}>
+                            <td>{line.purchaseNumber}</td>
+                            <td>R$ {line.price}</td>
+                            <td>{line.date}</td>
+                            <td><Link to={line.seeMore}>Ver mais</Link></td>
+                        </tr>
+                    ))
+                }
                 </tbody>
             </table>
         </Container>
